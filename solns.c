@@ -14,3 +14,18 @@ int max(int x[],int y)
   }
     return MAX;
 }
+
+int min(int x[],int y)
+{
+  int i=0,j,MIN;
+
+  MIN=x[0];
+  for(j=i+1; j<y; j++)
+  {
+    if(x[j] < MIN){
+      MIN=x[j];
+      i++;
+    }
+  }
+    return MIN;
+}
