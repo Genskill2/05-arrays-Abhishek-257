@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <assert.h>
 
-
-int max(int [], int);
+int max(int x[], int);
 
 int main(void) {
   int x[] = {9,5,6,10,2,-3,4};
-  
-  
+  int y=7;
+ 
+  printf("%d",max(x, y));
 }
 int max(int x[],int y)
 {
@@ -19,4 +19,7 @@ int max(int x[],int y)
     if(x[j]>MAX){
       MAX=x[j];
     i++;
+    }
   }
+    return MAX;
+}
