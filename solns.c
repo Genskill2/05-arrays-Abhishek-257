@@ -29,3 +29,12 @@ int min(int x[],int y)
   }
     return MIN;
 }
+
+float average(int x[], int n)
+{
+  float avg;
+  int i,sum=0;
+  for(i=0; i<n; i++)
+    sum+=x[i];
+  avg=sum/n;
+  return avg;
