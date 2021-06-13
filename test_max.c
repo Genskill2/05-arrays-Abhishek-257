@@ -6,9 +6,17 @@ int max(int [], int);
 
 int main(void) {
   int x[] = {9,5,6,10,2,-3,4};
-  assert (max(x, 7) == 10);
-
-  int y[] = {5};
-  assert (max(y, 1) == 5);
-  printf("Max: passed\n");
+  
+  
+}
+int max(int x[],int y)
+{
+  int i,j,MAX;
+  i=0;
+  MAX=x[0];
+  for(j=i+1; j<y; j++)
+  {
+    if(x[j]>MAX){
+      MAX=x[j];
+    i++;
   }
