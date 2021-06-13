@@ -2,15 +2,30 @@
 #include <stdio.h>
 int max(int x[],int y)
 {
-  int i,j,MAX;
-  i=0;
+  int i=0,j,MAX;
+
   MAX=x[0];
   for(j=i+1; j<y; j++)
   {
     if(x[j]>MAX){
       MAX=x[j];
-    i++;
+      i++;
     }
   }
     return MAX;
+}
+
+int min(int x[],int y)
+{
+  int i=0,j,MIN;
+
+  MIN=x[0];
+  for(j=i+1; j<y; j++)
+  {
+    if(x[j] < MIN){
+      MIN=x[j];
+      i++;
+    }
+  }
+    return MIN;
 }
