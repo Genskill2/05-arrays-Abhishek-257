@@ -1,6 +1,6 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
-int max(int x[],int y)
+int mode(int [], int);
 {
   int i,j,MAX;
   i=0;
