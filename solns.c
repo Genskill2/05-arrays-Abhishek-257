@@ -1,5 +1,4 @@
-
-int max(int x[], int y);
+int max(int x[], int y)
 {
   int i,j,MAX;
   i=0;
