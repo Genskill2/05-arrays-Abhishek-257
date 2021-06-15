@@ -2,13 +2,13 @@
 #include <assert.h>
 
 
-int mode(int [], int);
+int max(int [], int);
 
 int main(void) {
-  int x[] = {4, 9,5,6,5,10,0,2,-3, -3,4, 4};
-  assert ((mode(x, 12) == 4));
+  int x[] = {9,5,6,10,2,-3,4};
+  assert (max(x, 7) == 10);
 
   int y[] = {5};
-  assert (mode(y, 1) == 5);
-  printf("Mode: passed\n");
+  assert (max(y, 1) == 5);
+  printf("Max: passed\n");
   }
